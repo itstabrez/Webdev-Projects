@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1c9dd;
+}
+/* NAV BAR */
+
+nav{
+    background-color: black;
+    font-size: 1rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 12px;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+nav ul{
+    list-style: none;
+}
+
+/* GAME HEADING */
+
+.gameHead{
+    font-family: 'Monoton', cursive;
+}
+
+/* FULL GAME CONTAINER STYLE */
+
+.gameContainer{
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    justify-content: center;
+    margin: 20px 0px;
+    grid-gap: 2rem;
+}
+
+/* GAME BOX STYLING */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Rubik Wet Paint', cursive;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(243, 234, 223);
+    cursor: pointer;
+}
+
+/* WIN OR LOOSE IMAGE STYLING */
+
+.image-cont img{
+    width: 0px;
+    transition: width .8s ease-in-out;
+}
+
+/* GAME INFO STYLING */
+
+.gameInfo{
+    padding: 0px 20px;
+    font-family: 'Monoton', cursive;
+}
+
+/* BUTTON */
+
+#reset{
+    margin: 5px 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(236, 170, 245);
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+#reset:hover{
+    margin: 5px 30px;
+    color: rgb(196, 120, 247);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* UTILITY */
+
+.line{
+    background-color: black;
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    background-color: #ff0707;
+    transition: width 1s ease-in-out;
+}
+
+.center{
+    text-align: center;
+}
+
+.bl-0{
+    border-left: 0px;
+}
+
+.br-0{
+    border-right: 0px;
+}
+
+.bt-0{
+    border-top: 0px;
+}
+
+.bb-0{
+    border-bottom: 0px;
+}
+
+/* MEDIA FIRE TO MAKE RESPONSIVE */
+
+@media only screen and (max-width: 900px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        font-family: 'Rubik Wet Paint', cursive;
+        justify-content: center;
+    }
+    .gameContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px;
+        grid-gap: 0rem;
+    }
+    .image-cont img{
+        overflow: hidden;
+    }
+    .line{
+        display: none;
+    }
+}
