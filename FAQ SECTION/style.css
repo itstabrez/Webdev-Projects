@@ -1,0 +1,35 @@
+body{
+    background-color: antiquewhite;
+    height: 100%;
+    padding: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6rem;
+}
+
+.accordian{
+    background-color: rgb(255, 255, 255);
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(169, 245, 222);
+}
+
+.questions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    margin-right: 16px;
+    transition: transform 0.2s;
+}
+.icon.active{
+   transform: rotate(-180deg);
+}
+.answer{
+    color: rgb(77, 78, 74);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
