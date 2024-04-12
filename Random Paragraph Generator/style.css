@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+}
+#paragraph-input{
+    margin: 20px;
+}
+#button{
+    background-color: aquamarine;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 5px;
+    user-select: none;
+}
+#button:hover{
+    background-color: rgb(171, 247, 224);
+   
+}
+#paragraph{
+    width: 60vw;
+}
+#paragraph li{
+    margin: 20px;
+}
+
+
