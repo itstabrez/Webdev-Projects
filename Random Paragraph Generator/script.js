@@ -28,9 +28,9 @@ const webDev = [
   "The growing importance of cybersecurity in web development has prompted developers to prioritize security practices and protocols throughout the development lifecycle. Secure coding practices, encryption techniques, and vulnerability scanning tools help developers identify and mitigate security risks in web applications. By adopting a proactive approach to cybersecurity, developers can safeguard sensitive data, protect against cyber threats, and build trust with users.",
 
   "The democratization of web development tools and resources has empowered individuals from diverse backgrounds to learn and create web applications. Online tutorials, courses, and open-source projects provide accessible pathways for aspiring developers to acquire skills and build their portfolios. The vibrant developer community fosters collaboration, knowledge sharing, and innovation, driving the continued evolution of web development.",
-];
+];    //RANDOM PARA TEXTS
 
-function shuffle(array) {
+function shuffle(array) {        //SHUFFLING ARRAY TO GET NEW COLOR EVERY TIME
     const shuffledArray = [...array]; // Create a copy of the original array
     let currentIndex = shuffledArray.length;
     
